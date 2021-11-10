@@ -12,7 +12,7 @@
 //------------------------------------------------------------------------------
 #include "../glApp.h"
 
-#include "../libs/imgui/imgui.h"
+#include "imgui.h"
 
 
 //Dark + Blu
