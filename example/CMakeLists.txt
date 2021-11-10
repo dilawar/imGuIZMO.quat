@@ -56,19 +56,18 @@ add_subdirectory(src/libs)
 add_subdirectory(src/ui)
 add_subdirectory(src/tools)
 
-set(SRC "${CMAKE_CURRENT_SOURCE_DIR}/src")
 set(SOURCE_FILES
-    ${SRC}/glApp.cpp
-    ${SRC}/glWindow.cpp
-    ${SRC}/qJulia.cpp)
+    src/glApp.cpp
+    src/glWindow.cpp
+    src/qJulia.cpp)
 
 #
 # additional INCLUDE directories
 #
-include_directories(${SRC})
-include_directories(${SRC}/libs)
-include_directories(${SRC}/tools)
-include_directories(${SRC}/tools)
+include_directories(src)
+include_directories(src/libs)
+include_directories(src/tools)
+include_directories(src/tools)
 
 add_executable(testgui
     ${SOURCE_FILES}
